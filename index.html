@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Inglés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .option {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: #f2f2f2;
+        }
+        .category {
+            display: none; /* Ocultar categorías por defecto */
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .category.active {
+            display: block; /* Mostrar la categoría activa */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprende Inglés</h1>
+
+    <!-- Selección de opciones -->
+    <a href="#" class="option" onclick="showCategory('fruits')">Frutas</a>
+    <a href="#" class="option" onclick="showCategory('animals')">Animales</a>
+    <a href="#" class="option" onclick="showCategory('objects')">Objetos</a>
+    <a href="#" class="option" onclick="showCategory('foods')">Comidas</a>
+    <a href="https://translate.google.com/" target="_blank" class="option">
+        <h2>Traductor Oficial de Google</h2>
+        <p>Accede al traductor oficial de Google para traducir textos.</p>
+    </a>
+
+    <!-- Contenido de las categorías -->
+    <div id="fruits" class="category">
+        <h2>Frutas en Inglés</h2>
+        <li>Manzana - Apple</li>
+        <li>Naranja - Orange</li>
+        <li>Plátano - Banana</li>
+        <li>Sandía - Watermelon</li>
+        <li>Fresa - Strawberry</li>
+        <li>Uva - Grape</li>
+        <li>Limón - Lemon</li>
+        <li>Piña - Pineapple</li>
+        <li>Mango - Mango</li>
+        <li>Cereza - Cherry</li>
+        <li>Melocotón - Peach</li>
+        <li>Pera - Pear</li>
+        <li>Fruta de la pasión - Passion fruit</li>
+        <li>Kiwi - Kiwi</li>
+        <li>Melón - Melon</li>
+        <li>Granada - Pomegranate</li>
+        <li>Arándano - Blueberry</li>
+        <li>Fruta de dragón - Dragon fruit</li>
+        <li>Coco - Coconut</li>
+        <li>Guayaba - Guava</li>
+        <li>Papaya - Papaya</li>
+        <li>Fruta estrella - Starfruit</li>
+        <li>Higo - Fig</li>
+        <li>Níspero - Loquat</li>
+        <li>Albaricoque - Apricot</li>
+        <li>Durian - Durian</li>
+        <li>Caqui - Persimmon</li>
+        <li>Bayas de sauco - Elderberries</li>
+        <li>Ciruela - Plum</li>
+        <li>Nuez - Walnut</li>
+        <li>Avellana - Hazelnut</li>
+        <li>Castaña - Chestnut</li>
+        <li>Cereza ácida - Sour cherry</li>
+        <li>Morera - Mulberry</li>
+        <li>Ciruela pasa - Prune</li>
+        <li>Fruta cítrica - Citrus fruit</li>
+        <li>Pomelo - Grapefruit</li>
+        <li>Feijoa - Feijoa</li>
+        <li>Mangostán - Mangosteen</li>
+        <li>Chirimoya - Custard apple</li>
+        <li>Lichi - Lychee</li>
+        <li>Níspero japonés - Japanese medlar</li>
+        <li>Pitahaya - Pitahaya</li>
+        <li>Membrillo - Quince</li>
+        <li>Fruto seco - Dried fruit</li>
+        <li>Carambola - Carambola</li>
+        <li>Ciruela pasa - Prune</li>
+        <li>Ciruela amarilla - Yellow plum</li>
+        <li>Almendra - Almond</li>
+        <li>Uchuva - Cape gooseberry</li>
+        <li>Fruta de la pasión - Passion fruit</li>
+        <li>Ciruela de hueso rojo - Redstone plum</li>
+        <li>Mirabelle - Mirabelle</li>
+        <li>Nectarina - Nectarine</li>
+        <li>Fruto del almendro - Almond fruit</li>
+        <li>Fruto seco - Dried fruit</li>
+        <li>Fruta cítrica - Citrus fruit</li>
+        <li>Mandarina - Tangerine</li>
+        <li>Kumquat - Kumquat</li>
+        <li>Lima - Lime</li>
+        <li>Lúcuma - Lucuma</li>
+        <li>Fruta pasiva - Passion fruit</li>
+        <li>Patilla - Watermelon</li>
+        <li>Zarzamora - Blackberry</li>
+        <li>Arándano - Cranberry</li>
+        <li>Mora - Mulberry</li>
+        <li>Nuez de macadamia - Macadamia nut</li>
+        <li>Avellana - Hazelnut</li>
+        <li>Almendra - Almond</li>
+        <li>Castaña de caju - Cashew nut</li>
+        <li>Ciruela - Plum</li>
+        <li>Castano - Chestnut</li>
+        <li>Fruto del almendro - Almond fruit</li>
+        <li>Fruto del sauce - Willow fruit</li>
+        <li>Albaricoque - Apricot</li>
+        <li>Cereza - Cherry</li>
+        <li>Granada - Pomegranate</li>
+        <li>Arándano - Blueberry</li>
+        <li>Fruta del dragón - Dragon fruit</li>
+        <li>Mango - Mango</li>
+        <li>Ciruela - Plum</li>
+        <li>Fruta de la pasión - Passion fruit</li>
+        <li>Melocotón - Peach</li>
+        <li>Chirimoya - Custard apple</li>
+        <li>Mangostán - Mangosteen</li>
+        <li>Damasco - Apricot</li>
+        <li>Pera - Pear</li>
+        <li>Granada - Pomegranate</li>
+        <li>Albaricoque - Apricot</li>
+        <li>Damasco - Apricot</li>
+        <li>Fruta de la pasión - Passion fruit</li>
+        <li>Kiwi - Kiwi</li>
+        <li>Membrillo - Quince</li>
+        <li>Albaricoque - Apricot</li>
+        <li>Damasco - Apricot</li>
+        <li>Fruto de almendra - Almond fruit</li>
+        <li>Fruta de dragón - Dragon fruit</li>
+        <li>Guayaba - Guava</li>
+        <li>Guinda - Cherry</li>
+        <li>Kiwi - Kiwi</li>
+        <li>Limón - Lemon</li>
+        <li>Mandarina - Tangerine</li>
+        <li>Maracuyá - Passion fruit</li>
+        <li>Melón - Melon</li>
+        <li>Naranja - Orange</li>
+        <li>Nectarina - Nectarine</li>
+        <li>Níspero - Loquat</li>
+        <li>Pera - Pear</li>
+        <li>Piña - Pineapple</li>
+        <li>Plátano - Banana</li>
+        <li>Uva - Grape</li>
+        <li>Zarzamora - Blackberry</li>
+    </ul>
+</div>
+
+
+    <div id="animals" class="category">
+        <h2>Animales en Inglés</h2>
+        <ul>
+            <li>Perro - Dog</li>
+            <li>Gato - Cat</li>
+            <li>Pájaro - Bird</li>
+            <li>Elefante - Elephant</li>
+            <li>Caballo - Horse</li>
+            <li>Vaca - Cow</li>
+            <li>Cerdo - Pig</li>
+            <li>Gallina - Hen</li>
+            <li>Gallo - Rooster</li>
+            <li>Pato - Duck</li>
+            <li>Oveja - Sheep</li>
+            <li>Conejo - Rabbit</li>
+            <li>Ratón - Mouse</li>
+            <li>Rana - Frog</li>
+            <li>Tigre - Tiger</li>
+            <li>León - Lion</li>
+            <li>Oso - Bear</li>
+            <li>Lobo - Wolf</li>
+            <li>Zorro - Fox</li>
+            <li>Cocodrilo - Crocodile</li>
+            </li>
+            <li>Chimpancé - Chimpanzee</li>
+            <li>Panda - Panda</li>
+            <li>Koala - Koala</li>
+            <li>Mono - Monkey</li>
+            <li>Murciélago - Bat</li>
+            <li>Cabra - Goat</li>
+            <li>Camello - Camel</li>
+            <li>Ballena - Whale</li>
+            <li>Delfín - Dolphin</li>
+            <li>Foca - Seal</li>
+            <li>Tiburón - Shark</li>
+            <li>Orca - Orca</li>
+            <li>Pulpo - Octopus</li>
+            <li>Estrella de mar - Starfish</li>
+            <li>Caracol - Snail</li>
+            <li>Carpa - Carp</li>
+            <li>Ciempiés - Centipede</li>
+            <li>Cangrejo - Crab</li>
+            <li>Gamba - Shrimp</li>
+            <li>Langosta - Lobster</li>
+            <li>Calamar - Squid</li>
+            <li>Medusa - Jellyfish</li>
+            <li>Pez - Fish</li>
+            <li>Serpiente - Snake</li>
+            <li>Lagarto - Lizard</li>
+            <li>Rata - Rat</li>
+            <li>Cocodrilo - Crocodile</li>
+            <li>Erizo de mar - Sea urchin</li>
+            <li>Erizo - Hedgehog</li>
+            <li>Elefante marino - Sea elephant</li>
+            <li>Pez espada - Swordfish</li>
+            <li>Pez volador - Flying fish</li>
+            <li>Abeja - Bee</li>
+            <li>Araña - Spider</li>
+            <li>Almeja - Clam</li>
+            <li>Perdiz - Partridge</li>
+            <li>Tortuga - Turtle</li>
+            <li>Cigüeña - Stork</li>
+            <li>Paloma - Pigeon</li>
+            <li>Águila - Eagle</li>
+            <li>Búho - Owl</li>
+            <li>Grillo - Cricket</li>
+            <li>Chinche - Bedbug</li>
+            <li>Mosca - Fly</li>
+            <li>Polilla - Moth</li>
+            <li>Abubilla - Hoopoe</li>
+            <li>Erizo - Hedgehog</li>
+            <li>Ratón - Rat</li>
+            <li>Murciélago - Bat</li>
+            <li>Castor - Beaver</li>
+            <li>Lince - Lynx</li>
+            <li>Tejón - Badger</li>
+            <li>Mapache - Raccoon</li>
+            <li>Ardilla - Squirrel</li>
+            <li>Hamster - Hamster</li>
+            <li>Cobaya - Guinea pig</li>
+            <li>Conejillo de indias - Guinea pig</li>
+            <li>Hámster - Hamster</li>
+            <li>Hurón - Ferret</li>
+            <li>Meerkat - Meerkat</li>
+            <li>Suricata - Meerkat</li>
+            <li>Beluga - Beluga</li>
+            <li>Narval - Narwhal</li>
+            <li>Albatros - Albatross</li>
+            <li>Avestruz - Ostrich</li>
+            <li>Buho - Owl</li>
+            <li>Buitre - Vulture</li>
+            <li>Calamar - Squid</li>
+            <li>Camello - Camel</li>
+            <li>Carpio - Koi</li>
+            <li>Chinche - Bedbug</li>
+            <li>Chinchilla - Chinchilla</li>
+            <li>Coala - Koala</li>
+            <li>Cobra - Cobra</li>
+            <li>Coche de bomberos - Fire truck</li>
+            <li>Cocodrilo - Crocodile</li>
+            <li>Colibrí - Hummingbird</li>
+            <li>Cóndor - Condor</li>
+            <li>Cucaracha - Cockroach</li>
+            <li>Dodo - Dodo</li>
+            <li>Dragón - Dragon</li>
+            <li>Dromedario - Dromedary</li>
+            <li>Elefante - Elephant</li>
+            <li>Estrella de mar - Starfish</li>
+            <li>Flamenco - Flamingo</li>
+            <li>Gacela - Gazelle</li>
+            <li>Ganso - Goose</li>
+            <li>Gato - Cat</li>
+            <li>Gaviota - Seagull</li>
+            <li>Gorrión - Sparrow</li>
+            <li>Gorila - Gorilla</li>
+            <li>Gusano - Worm</li>
+            <li>Halibut - Halibut</li>
+            <li>Halcón - Hawk</li>
+            <li>Hormiga - Ant</li
+            </ul>
+    </div>
+   
+
+    <div id="foods" class="category">
+        <h2>Comidas en Inglés</h2>
+        <ul>
+            <li>Pizza - Pizza</li>
+            <li>Hamburguesa - Hamburger</li>
+            <li>Sopa - Soup</li>
+            <li>Ensalada - Salad</li>
+            <li>Pollo frito - Fried chicken</li>
+            <li>Pasta - Pasta</li>
+            <li>Sándwich - Sandwich</li>
+            <li>Arroz - Rice</li>
+            <li>Sushi - Sushi</li>
+            <li>Tacos - Tacos</li>
+            <li>Spaghetti - Spaghetti</li>
+            <li>Burrito - Burrito</li>
+            <li>Hot dog - Hot dog</li>
+            <li>Chile con carne - Chili con carne</li>
+            <li>Steak - Steak</li>
+            <li>Costillas - Ribs</li>
+            <li>Pescado - Fish</li>
+            <li>Camarones - Shrimp</li>
+            <li>Langosta - Lobster</li>
+            <li>Enchiladas - Enchiladas</li>
+            <li>Empanadas - Empanadas</li>
+            <li>Fajitas - Fajitas</li>
+            <li>Tortilla - Tortilla</li>
+            <li>Quesadilla - Quesadilla</li>
+            <li>Paella - Paella</li>
+            <li>Curry - Curry</li>
+            <li>Carne asada - Roast beef</li>
+            <li>Bacalao - Codfish</li>
+            <li>Salchicha - Sausage</li>
+            <li>Alitas de pollo - Chicken wings</li>
+            <li>Chuletas de cerdo - Pork chops</li>
+            <li>Patatas fritas - French fries</li>
+            <li>Albóndigas - Meatballs</li>
+            <li>Almejas - Clams</li>
+            <li>Cangrejo - Crab</li>
+            <li>Mejillones - Mussels</li>
+            <li>Ostras - Oysters</li>
+            <li>Paella - Paella</li>
+            <li>Filete - Fillet</li>
+            <li>Tarta - Cake</li>
+            <li>Magdalena - Muffin</li>
+            <li>Pastel - Pie</li>
+            <li>Galleta - Cookie</li>
+            <li>Helado - Ice cream</li>
+            <li>Flan - Flan</li>
+            <li>Donut - Donut</li>
+            <li>Pastel de chocolate - Chocolate cake</li>
+            <li>Postre - Dessert</li>
+            <li>Budín de pan - Bread pudding</li>
+            <li>Pastel de zanahoria - Carrot cake</li>
+            <li>Cupcake - Cupcake</li>
+            <li>Brownie - Brownie</li>
+            <li>Churro - Churro</li>
+            <li>Helado de vainilla - Vanilla ice cream</li>
+            <li>Helado de fresa - Strawberry ice cream</li>
+            <li>Helado de chocolate - Chocolate ice cream</li>
+            <li>Pan - Bread</li>
+            <li>Leche - Milk</li>
+            <li>Jugo - Juice</li>
+            <li>Agua - Water</li>
+            <li>Café - Coffee</li>
+            <li>Té - Tea</li>
+            <li>Refresco - Soda</li>
+            <li>Cerveza - Beer</li>
+            <li>Vino - Wine</li>
+            <li>Champán - Champagne</li>
+            <li>Whisky - Whiskey</li>
+            <li>Vodka - Vodka</li>
+            <li>Ginebra - Gin</li>
+            <li>Tequila - Tequila</li>
+            <li>Ron - Rum</li>
+            <li>Cognac - Cognac</li>
+            <li>Licor - Liqueur</li>
+            <li>Aguardiente - Brandy</li>
+        </ul>
+    </div>
+
+    <div id="objects" class="category">
+        <h2>Objetos en Inglés</h2>
+        <ul>
+            <li>Silla - Chair</li>
+            <li>Mesa - Table</li>
+            <li>Coche - Car</li>
+            <li>Libro - Book</li>
+            <li>Computadora - Computer</li>
+            <li>Televisor - Television</li>
+            <li>Reloj - Clock</li>
+            <li>Cama - Bed</li>
+            <li>Refrigerador - Refrigerator</li>
+            <li>Lámpara - Lamp</li>
+            <li>Telefono - Telephone</li>
+            <li>Cocina - Kitchen</li>
+            <li>Cepillo de dientes - Toothbrush</li>
+            <li>Cafetera - Coffee maker</li>
+            <li>Espejo - Mirror</li>
+            <li>Puerta - Door</li>
+            <li>Ventana - Window</li>
+            <li>Martillo - Hammer</li>
+            <li>Cuchillo - Knife</li>
+            <li>Tenedor - Fork</li>
+            <li>Cuchara - Spoon</li>
+            <li>Plato - Plate</li>
+            <li>Vaso - Glass</li>
+            <li>Taza - Cup</li>
+            <li>Cuchara - Teaspoon</li>
+            <li>Tenedor - Fork</li>
+            <li>Cuchillo - Knife</li>
+            <li>Cuchara sopera - Soup spoon</li>
+            <li>Cuchara de postre - Dessert spoon</li>
+            <li>Cuchara de helado - Ice cream spoon</li>
+            <li>Cuchara medidora - Measuring spoon</li>
+            <li>Abrebotellas - Bottle opener</li>
+            <li>Abrelatas - Can opener</li>
+            <li>Escurridor de fregadero - Sink drainer</li>
+            <li>Bandeja para horno - Baking tray</li>
+            <li>Batidor de mano - Hand mixer</li>
+            <li>Batidor de varillas - Whisk</li>
+            <li>Batidora de vaso - Blender</li>
+            <li>Botella - Bottle</li>
+            <li>Canasta de pan - Bread basket</li>
+            <li>Cazuela - Casserole</li>
+            <li>Cocina eléctrica - Electric stove</li>
+            <li>Cubiertos - Cutlery</li>
+            <li>Cuchillo de cocina - Kitchen knife</li>
+            <li>Cucharón - Ladle</li>
+            <li>Cucharón - Soup ladle</li>
+            <li>Cuchillo para carne - Carving knife</li>
+            <li>Cuchillo para pan - Bread knife</li>
+            <li>Cuchillo para verduras - Vegetable knife</li>
+            <li>Exprimidor - Juicer</li>
+            <li>Hervidor - Kettle</li>
+            <li>Molinillo de café - Coffee grinder</li>
+            <li>Olla a presión - Pressure cooker</li>
+            <li>Panera - Bread bin</li>
+            <li>Parrilla - Grill</li>
+            <li>Pasapuré - Masher</li>
+            <li>Pelador - Peeler</li>
+            <li>Rallador - Grater</li>
+            <li>Sacacorchos - Corkscrew</li>
+            <li>Tabla de cortar - Chopping board</li>
+            <li>Taza de medir - Measuring cup</li>
+            <li>Tostadora - Toaster</li>
+            <li>Vaso mezclador - Mixing glass</li>
+            <li>Wok - Wok</li>
+            <li>Zumo exprimido - Squeezer</li>
+        </ul>
+    </div>
+    
+
+    <script>
+        // Función para mostrar la categoría seleccionada y ocultar las demás
+        function showCategory(categoryName) {
+            // Ocultar todas las categorías
+            let categories = document.getElementsByClassName('category');
+            for (let i = 0; i < categories.length; i++) {
+                categories[i].classList.remove('active');
+            }
+
+            // Mostrar la categoría seleccionada
+            document.getElementById(categoryName).classList.add('active');
+        }
+    </script>
+</body>
+</html>
